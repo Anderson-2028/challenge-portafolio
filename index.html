@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Anderson</a>
+            </div>
+            <nav id="nav">
+                <ul>                
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#formacion" onclick="seleccionar()">FORMACION</a></li>
+                    <li><a href="#portfolio"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido">
+            <div class="img-contenedor">
+                <img src="img/fondo2.jpeg" alt="" class="img-logo">
+            </div>
+            <h1>ANDERSON PEREZ</h1>
+            <h3>Desarrollador Front-End</h3>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Anderson Perez</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde reprehenderit excepturi. Nihil fuga cumque ducimus sit nemo, repellat quibusdam dolores hic voluptas tenetur mollitia consequuntur unde, doloremque, aut maxime?</p>
+
+            <div class="fila">
+
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 3216085319
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ap8446751@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-hobbies">
+                        <div class="hobbies">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-futbol"></i>                            <span>FUTBOL</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-film"></i>                            <span>MOVIES</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-book"></i>                           <span>LEER</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-headphones"></i>                          <span>MUSICA</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML Y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="formacion">
+        <div class="contenido-seccion">
+            <h2>Formacion</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>One Oracle Next Education - ALura Latam</h3>
+                    <span>ENERO - <strong>PRESENTE</strong> 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/encriptador de texto.png" alt="" class="porta">
+                    <div class="overlay">
+                        <h3>Challenge ALura</h3>
+                        <p>Encriptador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba" >
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
